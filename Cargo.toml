@@ -1,0 +1,20 @@
+[package]
+name = "copyast"
+version = "0.1.0"
+edition = "2024"
+description = "Copy text source files into one context file for AI"
+default-run = "copyast"
+
+[[bin]]
+name = "copyast"
+path = "src/main.rs"
+
+[dependencies]
+clap = {
+    version = "4.6.6",
+    features = ["derive"]
+}
+ignore = "0.4"
+thiserror = "1"
+colored = "2"
+chrono = "0.4"
