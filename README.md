@@ -226,13 +226,13 @@ dist/
 Thêm một tên tệp cấu hình bỏ qua riêng của dự án:
 
 ```bash
-copyast . ./copyast-output.txt --ignore-file .mycompanyignore
+copyast -i . -o ./copyast-output.txt --ignore-file .mycompanyignore
 ```
 
 Có thể dùng `--ignore-file` nhiều lần:
 
 ```bash
-copyast . ./copyast-output.txt --ignore-file .mycompanyignore --ignore-file .localignore
+copyast -i . -o ./copyast-output.txt --ignore-file .mycompanyignore --ignore-file .localignore
 ```
 
 `--no-ignore` tắt việc đọc các tệp cấu hình bỏ qua, nhưng tệp và thư mục ẩn vẫn
@@ -240,7 +240,7 @@ bị bỏ qua. Hãy dùng đồng thời `--no-ignore --hidden` nếu bạn th�
 những mục ẩn:
 
 ```bash
-copyast . ./copyast-output.txt --no-ignore --hidden
+copyast -i . -o ./copyast-output.txt --no-ignore --hidden
 ```
 
 ### Tạo `.copyastignore` từ mẫu có sẵn
